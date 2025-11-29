@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="12style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="payment-scan-section">
+            <h2 class="section-title">Scan Karke Payment Karein</h2>
+            <p class="instruction">Aap ₹X (amount) ka payment karne ke liye yeh QR Code scan kar sakte hain:</p>
+            <div class="qr-code-area">
+                <div class="qr-code"></div>  
+                <img src="3.jpg" alt="QR Code" class="qr-image">
+                <div class="upi-details">
+                    <span class="upi-id">7888645007@ptaxis</span>
+                    <button class="copy-btn">📋</button>
+                </div>
+            </div>
+            <p class="alt-instruction">Ya phir is *UPI ID* par bheji sakte hain: *7888645007@ptaxis*</p>
+        </section>
+
+        <hr class="separator">
+
+        <section class="payment-confirm-section">
+            <h2 class="section-title">Payment Confirm Karein</h2>
+            <p class="instruction">Payment karne ke baad, kripya *Transaction ID* neeche daalein:</p>
+            <form class="transaction-form">
+                <label for="txn-id" class="form-label">12 digit transaction reference number</label>
+                <input type="text" id="txn-id" name="txn-id" placeholder="Enter 12-digit transaction ID" required>
+                <button type="submit" class="submit-btn">Confirm Payment</button>
+            </form>
+        </section> 
+        <script src=".js"></script>
+    </div> 
+</body>
+</html>

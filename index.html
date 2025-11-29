@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Sleek Kicks - The naman Sneaker Store</title>
+    <meta name="description"
+        content="Discover the latest collection of sneakers, boots, and sports shoes for men and women at Sleek Kicks. High-quality footwear with a modern style, inspired by the best designs.">
+    <meta name="keywords"
+        content="shoe store, sneakers, nike, adidas, boots, sports shoes, men's shoes, women's shoes, modern footwear">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0D0D0D;
+            /* Darker background from the image */
+        }
+
+        .hero-bg-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+            color: rgba(255, 255, 255, 0.05);
+            font-size: 10rem;
+            font-weight: 900;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+            line-height: 1;
+            z-index: 1;
+        }
+
+        .product-card-small {
+            background-color: #1A1A1A;
+        }
+
+        .category-btn.active {
+            background-color: #E53935;
+            color: white;
+        }
+
+        .brands-section img {
+            filter: grayscale(1) brightness(2);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        .brands-section img:hover {
+            filter: grayscale(0) brightness(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="text-white">
+
+    <!-- Header Section -->
+    <header class="absolute top-0 left-0 w-full z-50 py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-3xl font-black tracking-wider">Sneaker hub </a>
+            <div class="hidden md:flex items-center space-x-10">
+                <a href="#featured" class="hover:text-red-500 transition-colors duration-300">New & Featured</a>
+                <a href="#men" class="hover:text-red-500 transition-colors duration-300">Men</a>
+                <a href="#women" class="hover:text-red-500 transition-colors duration-300">Women</a>
+                <a href="#kids" class="hover:text-red-500 transition-colors duration-300">Kids</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <input type="text" id="searchInput" placeholder="Search"
+                        class="bg-gray-800/50 text-white rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-red-500 w-32 md:w-auto transition-all duration-300">
+                    <svg class="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                <button class="relative p-2 rounded-full bg-gray-800/50">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                   <a href="add-to-cart.html" ></a> </svg>
+                    <span id="cart-count"
+                        class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span> 
+               
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="container mx-auto px-6 pt-32 pb-16 flex flex-col md:flex-row items-center">
+            <!-- Left Side -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-black leading-tight mb-4">
+                    All the <br> <span class="text-red-500">Sneakers</span> you want <br> is here.
+                </h1>
+                <p class="text-lg text-gray-400 mb-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus commodo, lacus, quo nunc.
+                </p>
+                <div class="flex items-center justify-center md:justify-start gap-6 mb-8">
+                    <div class="text-4xl font-bold">$420</div>
+                    <button
+                        onclick="window.location.href='buynow.html'"
+                        class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300">BUY
+                        NOW
+                </div>
+                <div class="flex items-center justify-center md:justify-start gap-2">
+                    <div class="flex text-yellow-400">★★★★★</div>
+                    <p class="text-gray-400">230 Ratings worldwide</p>
+                </div> 
+                <div class="flex items-center justify-center md:justify-start gap-2 mt-4"> 
+                    <img src="shopping.webp" alt="shopping" class="w-10 h-10"> 
+                    <div class="flex text-yellow-400">★★★★★</div>
+                    <p class="text-gray-400">230 Ratings worldwide</p>
+                     
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="md:w-1/2 relative mt-12 md:mt-0 flex justify-center items-center">
+                <span class="hero-bg-text select-none">NIKE</span>
+                <img id="hero-shoe-image" src="shoes.png" alt="Air Jordan 12 Retro"
+                    class="z-10 w-3/4 transform -rotate-12 hover:rotate-0 transition-transform duration-500 ease-in-out"> 
+                    <button
+                    onclick="window.location.href='buynow.html'"
+                        class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300">BUY
+                        NOW
+            </div> 
+             <div class="md:w-1/2 relative mt-12 md:mt-0 flex justify-center items-center">
+                <span class="hero-bg-text select-none">NIKE</span>
+                <img id="hero-shoe-image" src="shopping.webp" alt="Air Jordan 12 Retro"
+                    class="z-10 w-3/4 transform -rotate-12 hover:rotate-0 transition-transform duration-500 ease-in-out"> 
+                    <button
+                    onclick="window.location.href='buynow.html'"
+                        class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300">BUY
+                        NOW
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="featured" class="container mx-auto px-6 py-16">
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product cards will be inserted here by JavaScript --> 
+                 <button
+                    onclick="window.location.href='buynow.html'"
+                        class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300">BUY
+                        NOW
+            </div>
+        </section>
+
+        <!-- Gender Categories -->
+        <section id="collections" class="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="rounded-2xl p-8 flex items-end h-96 bg-cover bg-center"
+                style="background-image: url('https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=1935&auto=format&fit=crop');">
+                <div class="bg-black/40 p-6 rounded-lg">
+                    <h3 class="text-3xl font-bold">For Men</h3>
+                    <button class="mt-2 text-red-400 font-semibold">Shop Now →</button> 
+                    
+                </div>
+            </div>
+            <div class="rounded-2xl p-8 flex items-end h-96 bg-cover bg-center"
+                style="background-image: url('https://images.pexels.com/photos/318236/pexels-photo-318236.jpeg');">
+                <div class="bg-black/40 p-6 rounded-lg">
+                    <h3 class="text-3xl font-bold">For Women</h3>
+                    <button class="mt-2 text-red-400 font-semibold">Shop Now →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Categories Section -->
+        <section id="categories" class="container mx-auto px-6 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold">Best Categories</h2>
+                <p class="text-gray-400">Find the Best Product For You</p>
+            </div>
+            <div id="category-filters" class="flex flex-wrap justify-center gap-4 mb-12">
+                <button data-category="all"
+                    class="category-btn active px-5 py-2 rounded-lg font-semibold transition-all duration-300">Shoes</button>
+                <button data-category="boot"
+                    class="category-btn px-5 py-2 rounded-lg font-semibold transition-all duration-300">Boots</button>
+                <button data-category="sandal"
+                    class="category-btn px-5 py-2 rounded-lg font-semibold transition-all duration-300">Slipper</button>
+                <button data-category="sports"
+                    class="category-btn px-5 py-2 rounded-lg font-semibold transition-all duration-300">Sportswear</button> 
+                <button data-category="sneaker"
+                    class="category-btn px-5 py-2 rounded-lg font-semibold transition-all duration-300">sneakers</button>
+            </div> 
+
+            <div id="category-product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Category filtered products will be inserted here -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/50 pt-16 pb-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <a href="#" class="text-3xl font-black tracking-wider mb-8 inline-block">Sneaker hub </a>
+            <div class="flex justify-center space-x-8 mb-8">
+                <a href="#" class="text-gray-400 hover:text-red-500">Resources</a>
+                <a href="#" class="text-gray-400 hover:text-red-500">Blog</a>
+                <a href="#" class="text-gray-400 hover:text-red-500">Docs</a>
+                <a href="#" class="text-gray-400 hover:text-red-500">Contact</a>
+            </div>
+            <p class="text-gray-500">&copy; 2024 sneaker hub . All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add to Cart Notification -->
+    <div id="cart-notification"
+        class="fixed bottom-5 right-5 bg-green-500 text-white py-3 px-6 rounded-lg shadow-lg transform translate-x-[120%] transition-transform duration-500 ease-in-out">
+        Item added to cart! 
+
+    </div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
