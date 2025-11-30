@@ -1,2 +1,2 @@
 # sneaker-website
-i created a e-comerce shoes shoping website  visit = https://sneakerhub23.netlify.app/
+An e-commerce sneaker shopping website built with HTML/CSS. = https://sneakerhub23.netlify.app/
