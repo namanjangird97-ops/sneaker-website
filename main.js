@@ -117,4 +117,5 @@
                     addToCart(productId);
                 }
             });
+
         });
